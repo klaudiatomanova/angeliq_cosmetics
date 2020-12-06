@@ -720,5 +720,6 @@ iframe {
 @media (max-width: 380px) {
   .contact {
     margin-top: 3rem;
+    padding-top: 2rem;
   }
 }
