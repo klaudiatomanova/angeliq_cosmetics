@@ -640,9 +640,11 @@ iframe {
     align-self: center;
     flex-direction: column;
     height: auto;
+    min-height: 700px;
     width: 300px;
     overflow: hidden;
     border: none;
+    justify-content: center;
   }
 
   .angelika {
