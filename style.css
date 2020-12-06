@@ -175,7 +175,33 @@ ul {
 }
 
 .contact {
-  width: 50%;
+  display: flex;
+  margin-left: 2rem;
+}
+
+.contact ul {
+  align-self: center;
+}
+
+.angelika {
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin-left: 3rem;
+}
+
+.contact-foto {
+  height: 214px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: solid white;
+  align-self: center;
+}
+
+#angeliq_cosmetics {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
 }
 
 h3 {
@@ -414,6 +440,28 @@ iframe {
   }
 }
 
+@media (max-width: 1028px) {
+  .section-content-contact {
+    flex-direction: column;
+  }
+
+  .map {
+    display: flex;
+    align-self: center;
+    width: 400px;
+    height: auto;
+  }
+
+  iframe {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .contact-foto {
+    align-self: center;
+  }
+}
+
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   .header {
@@ -450,7 +498,8 @@ iframe {
   }
 
   .map {
-    width: auto;
+    width: 400px;
+    height: auto;
     align-self: center;
   }
 
@@ -461,8 +510,12 @@ iframe {
   }
 
   .contact ul li {
-    padding: 0.2rem;
     font-weight: bold;
+  }
+
+  .contact-foto {
+    width: auto;
+    align-self: center;
   }
 
   .column {
@@ -474,7 +527,7 @@ iframe {
   }
 
   iframe {
-    width: auto;
+    width: 100%;
     margin-bottom: 2rem;
   }
 
@@ -576,6 +629,21 @@ iframe {
   .contact ul li {
     padding: 0.2rem;
     font-weight: bold;
+  }
+
+  .contact-foto {
+    width: auto;
+    align-self: center;
+    flex-direction: column;
+    height: 535px;
+    width: 300px;
+    padding-top: 1rem;
+  }
+
+  .angelika {
+    max-width: 400px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
   .collapsible:after {

@@ -137,8 +137,11 @@ spanThree[1].onclick = () => {
     if (n == 3) {
       i.style.left = "-2220px";
     }
-    if (n > 3) {
-      l = 3;
+    if (n == 4) {
+      i.style.left = "-2700px";
+    }
+    if (n > 4) {
+      l = 4;
     }
   }
 };
