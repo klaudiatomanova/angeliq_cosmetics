@@ -626,7 +626,6 @@ iframe {
   }
 
   .contact {
-    margin-top: 4rem;
     width: 100%;
     text-align: left;
   }
@@ -643,6 +642,7 @@ iframe {
     width: 300px;
     padding-top: 1rem;
     overflow: hidden;
+    border: none;
   }
 
   .angelika {
