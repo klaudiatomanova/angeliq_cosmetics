@@ -641,7 +641,6 @@ iframe {
     flex-direction: column;
     height: 535px;
     width: 300px;
-    padding-top: 1rem;
     overflow: hidden;
     border: none;
   }
@@ -715,5 +714,11 @@ iframe {
     top: 0;
     right: 0;
     z-index: 2;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact {
+    margin-top: 3rem;
   }
 }
