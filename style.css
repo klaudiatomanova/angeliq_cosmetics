@@ -58,6 +58,10 @@
   justify-content: center;
 }
 
+.heading img {
+  max-width: 100vw;
+}
+
 /* MAIN */
 
 main {
