@@ -628,6 +628,7 @@ iframe {
   .contact {
     width: 100%;
     text-align: left;
+    margin-top: 1rem;
   }
 
   .contact ul li {
