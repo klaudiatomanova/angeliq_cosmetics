@@ -1,0 +1,638 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* NAV */
+
+#label {
+  color: black;
+  display: none;
+  margin: 0 30px 0 0;
+  font-size: 40px;
+  line-height: 70px;
+  width: 26px;
+  float: right;
+}
+
+#toggle {
+  display: none;
+}
+
+.hero-menu {
+  line-height: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  background-color: black;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+.hero-menu a {
+  cursor: pointer;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.1s ease-in-out;
+}
+
+.hero-menu a:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.hero {
+  margin-top: 3rem;
+  width: 100vw;
+  height: auto;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+/* MAIN */
+
+main {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  margin: 3rem auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+  padding: 1rem;
+  background-color: black;
+  font-family: "Playfair Display", serif;
+}
+
+.section-black {
+  background-color: black;
+}
+
+.black-heading {
+  color: white;
+}
+
+.section-heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+.section-container {
+  padding: 3rem 0 2rem 0;
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+.section-content {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-content-black {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.column {
+  width: 50%;
+}
+
+.column-one {
+  margin-right: 3rem;
+}
+
+.sub-heading {
+  padding: 1rem;
+}
+
+.sub-heading-item {
+  padding: 0rem 0.4rem 1.2rem 0.4rem;
+}
+
+.section-content-cennik {
+  width: 50%;
+}
+
+.cennik-content {
+  width: 100%;
+}
+
+.ceny {
+  width: 30%;
+}
+
+.ceny ul {
+  float: right;
+}
+
+.map {
+  width: 50%;
+}
+
+.contact {
+  width: 50%;
+}
+
+h3 {
+  padding: 1rem 0 1rem 0;
+}
+
+table {
+  border-spacing: 0.5rem;
+}
+
+th {
+  margin: 1rem 0 1rem 0;
+  float: left;
+}
+
+#cena {
+  min-width: 4.8rem;
+}
+
+.cena {
+  float: right;
+}
+
+.students {
+  color: blue;
+}
+
+/* FOOTER */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  background-color: black;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.footer-nav {
+  padding-bottom: 1rem;
+}
+
+.social {
+  margin-top: 1rem;
+}
+
+.social a {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.footer-bottom {
+  color: gray;
+  padding-top: 1rem;
+  border-top: solid gray;
+  border-width: 1px;
+}
+
+iframe {
+  height: 20rem;
+  width: 80%;
+}
+
+/* COLLAPSIBLE */
+
+.collapsible {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: inherit;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+  background-color: rgb(46, 45, 45);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsible-div {
+  padding: 0.5rem 1rem;
+  display: none;
+  overflow: hidden;
+  background-color: rgb(46, 45, 45);
+}
+
+.collapsible:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 0.7rem;
+  color: white;
+  float: right;
+  margin-right: 2rem;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* GALERIA */
+
+.span {
+  color: white;
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  top: 8rem;
+  transition: 0.5s;
+}
+
+.span-right {
+  text-align: right;
+  margin-left: -10px;
+}
+
+.section-white .span {
+  color: black;
+}
+
+.gallery-section {
+  width: 98%;
+  height: 300px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+}
+
+.gallery-section::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.div {
+  min-width: 330px;
+  position: relative;
+  left: 0;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  margin: 10px 20px;
+  color: white;
+  transition: 0.5s;
+  display: flex;
+}
+
+.div img {
+  object-fit: contain;
+  max-width: 350px;
+}
+
+.gallery {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  margin-left: -5rem;
+  margin-right: -5rem;
+}
+
+.gallery-item {
+  flex: 1 1 15rem;
+  margin: 1rem;
+}
+
+.gallery-item img {
+  object-fit: contain;
+  max-width: 350px;
+}
+
+@media (max-width: 1100px) {
+  .section-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: auto;
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+    color: white;
+  }
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .section-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: auto;
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+    color: white;
+  }
+
+  .gallery {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    flex-wrap: nowrap;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: auto;
+  }
+
+  .section-content-cennik {
+    width: 70%;
+  }
+
+  .gallery {
+    margin-right: 0;
+    margin-left: 0;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .header {
+    text-align: center;
+  }
+
+  .column-one {
+    margin-right: 0 !important;
+  }
+
+  .section-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: auto;
+  }
+
+  .header-container {
+    margin: 3rem 1rem;
+    align-self: center;
+    width: 90%;
+  }
+
+  .section-content-cennik {
+    width: 90%;
+  }
+
+  .cena {
+    white-space: nowrap;
+  }
+
+  .section-content-contact {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .map {
+    width: auto;
+    align-self: center;
+  }
+
+  .contact {
+    align-self: center;
+    text-align: left;
+    width: auto;
+  }
+
+  .contact ul li {
+    padding: 0.2rem;
+    font-weight: bold;
+  }
+
+  .column {
+    width: auto;
+  }
+
+  .gallery-item img {
+    max-width: 300px;
+  }
+
+  iframe {
+    width: auto;
+    margin-bottom: 2rem;
+  }
+
+  #label {
+    display: block;
+    cursor: pointer;
+    color: gray;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .hero-container {
+    background-color: black;
+  }
+
+  .hero-menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    z-index: 1;
+  }
+
+  .hero-menu a {
+    display: block;
+    margin: 0;
+    padding: 2rem;
+  }
+
+  #toggle:checked + .hero-menu {
+    display: block;
+  }
+  #toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  .gallery {
+    margin-right: 0;
+    margin-left: 0;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .div img {
+    max-width: 250px;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .section-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: auto;
+  }
+
+  .header-container {
+    margin: 3rem 0.5rem;
+    align-self: center;
+    width: 90%;
+  }
+
+  .gallery {
+    margin-right: 0;
+    margin-left: 0;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .div img {
+    max-width: 250px;
+  }
+
+  .section-content-cennik {
+    width: 100%;
+  }
+
+  .cena {
+    white-space: nowrap;
+  }
+
+  .section-content-contact {
+    flex-direction: column;
+  }
+
+  .map {
+    width: 90%;
+  }
+
+  .contact {
+    width: 90%;
+    text-align: left;
+  }
+
+  .contact ul li {
+    padding: 0.2rem;
+    font-weight: bold;
+  }
+
+  .collapsible:after {
+    margin-right: 0;
+  }
+
+  .column {
+    width: auto;
+  }
+
+  .column-one {
+    margin-right: 0;
+  }
+
+  .collapsible {
+    word-wrap: break-word;
+  }
+
+  iframe {
+    width: 80vw;
+    margin-bottom: 2rem;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    font-size: 0.7rem;
+  }
+
+  #label {
+    display: block;
+    cursor: pointer;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .hero-container {
+    background-color: black;
+  }
+
+  .hero-menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .hero-menu a {
+    display: block;
+    margin: 0;
+  }
+
+  #toggle:checked + .hero-menu {
+    display: block;
+  }
+  #toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+}
