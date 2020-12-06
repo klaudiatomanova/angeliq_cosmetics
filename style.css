@@ -644,7 +644,7 @@ iframe {
     width: 300px;
     overflow: hidden;
     border: none;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .angelika {
