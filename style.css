@@ -622,14 +622,13 @@ iframe {
   }
 
   .contact {
-    margin-top: 2rem;
+    margin-top: 4rem;
     width: 100%;
     text-align: left;
   }
 
   .contact ul li {
     padding: 0.2rem;
-    font-weight: bold;
   }
 
   .contact-foto {
@@ -646,6 +645,7 @@ iframe {
     max-width: 400px;
     margin-left: 0;
     margin-bottom: 0;
+    margin-top: 1rem;
   }
 
   .collapsible:after {
