@@ -370,6 +370,10 @@ iframe {
   margin-right: -5rem;
 }
 
+.gallery-products {
+  margin-top: 0 !important;
+}
+
 .gallery-item {
   flex: 1 1 15rem;
   margin: 1rem;
