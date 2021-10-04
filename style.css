@@ -225,8 +225,20 @@ th {
   float: right;
 }
 
+.mezoterapia {
+  width: 3.74rem;
+}
+
+.brows {
+  padding-left: 0.4rem !important;
+}
+
+.kombo {
+  width: 4.3rem;
+}
+
 .students {
-  color: blue;
+  color: black;
 }
 
 /* FOOTER */
